@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- ← Geri -->
+    <Button
+        android:id="@+id/btnProg1Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="← Geri"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Başlık -->
+    <TextView
+        android:id="@+id/tvProg1Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Program 1 – Başlangıç"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/btnProg1Back"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="12dp"/>
+
+    <!-- Hareket Listesi -->
+    <ScrollView
+        android:id="@+id/scrollProg1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/tvProg1Title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 1. Goblet Squat -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="1. Goblet Squat – 3×10 (60 sn dinlenme)"/>
+            <VideoView
+                android:id="@+id/videoGoblet"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="8dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="16dp">
+                <Button
+                    android:id="@+id/btnPlayGoblet"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="▶ Başlat"/>
+                <Button
+                    android:id="@+id/btnPauseGoblet"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="⏸ Durdur"/>
+            </LinearLayout>
+
+            <!-- 2. Düz Dumbell Bench Press -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="2. Düz Dumbell Bench Press – 3×10"/>
+            <VideoView
+                android:id="@+id/videoBench"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="8dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="16dp">
+                <Button
+                    android:id="@+id/btnPlayBench"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="▶ Başlat"/>
+                <Button
+                    android:id="@+id/btnPauseBench"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="⏸ Durdur"/>
+            </LinearLayout>
+
+            <!-- 3. Tek Kol Dumbell Row -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="3. Tek Kol Dumbell Row – 3×10 (her kol)"/>
+            <VideoView
+                android:id="@+id/videoRow"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="8dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="16dp">
+                <Button
+                    android:id="@+id/btnPlayRow"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="▶ Başlat"/>
+                <Button
+                    android:id="@+id/btnPauseRow"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="⏸ Durdur"/>
+            </LinearLayout>
+
+            <!-- 4. Dumbell Döner Deadlift -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="4. Dumbell Deadlift – 3×12"/>
+            <VideoView
+                android:id="@+id/videoDeadlift"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="8dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="16dp">
+                <Button
+                    android:id="@+id/btnPlayDeadlift"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="▶ Başlat"/>
+                <Button
+                    android:id="@+id/btnPauseDeadlift"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="⏸ Durdur"/>
+            </LinearLayout>
+
+            <!-- 5. Oturarak Dumbell Shoulder Press -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="5. Oturarak Dumbell Shoulder Press – 3×10"/>
+            <VideoView
+                android:id="@+id/videoPress"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="8dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="16dp">
+                <Button
+                    android:id="@+id/btnPlayPress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="▶ Başlat"/>
+                <Button
+                    android:id="@+id/btnPausePress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="⏸ Durdur"/>
+            </LinearLayout>
+
+            <!-- 6. Dumbell Hammer Curl -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="6. Dumbell Hammer Curl – 3×12"/>
+            <VideoView
+                android:id="@+id/videoCurl"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="8dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="16dp">
+                <Button
+                    android:id="@+id/btnPlayCurl"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="▶ Başlat"/>
+                <Button
+                    android:id="@+id/btnPauseCurl"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="⏸ Durdur"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

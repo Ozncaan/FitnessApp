@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lotus.fitnessapp"
+xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FitnessApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AnaEkran"
+            android:exported="false" />
+
+        <!-- “Evde Spor” seçilince açılacak ekran -->
+        <activity
+            android:name=".EvdeSporActivity"
+            android:exported="false" />
+        <!-- Dumbell Seti ekranı -->
+        <activity
+            android:name=".DumbellActivity"
+            android:exported="false" />
+        <!-- Evde Dumbell Programları -->
+        <activity android:name=".Program1Activity" android:exported="false" />
+        <activity android:name=".Program2Activity" android:exported="false" />
+        <activity android:name=".Program3Activity" android:exported="false" />
+        <activity android:name=".Program4Activity" android:exported="false" />
+        <activity android:name=".Program5Activity" android:exported="false" />
+
+
+        <!-- Vücut Ağırlığı ekranı -->
+        <activity
+            android:name=".BodyWeightActivity"
+            android:exported="false" />
+        <!-- Vücut Ağırlığı Programları -->
+        <activity
+            android:name=".BWProgram1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".BWProgram2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".BWProgram3Activity"
+            android:exported="false" />
+
+
+
+        <!-- “Spor Salonunda Spor” seçilince açılacak ekran -->
+        <activity
+            android:name=".SporSalonuActivity"
+            android:exported="false" />
+        <!-- Spor Salonu Programları -->
+        <activity
+            android:name=".GymProgram1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".GymProgram2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".GymProgram3Activity"
+            android:exported="false" />
+
+
+
+
+    </application>
+
+</manifest>

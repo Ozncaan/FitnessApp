@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- ← Geri -->
+    <Button
+        android:id="@+id/btnGymProg3Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="← Geri"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Başlık -->
+    <TextView
+        android:id="@+id/tvGymProg3Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Program 3 – Bölgesel Split"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/btnGymProg3Back"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="12dp"/>
+
+    <!-- Hareket Listesi -->
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/tvGymProg3Title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Pazartesi – Göğüs -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pazartesi – Göğüs"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Barbell Bench Press – 4×8"
+                android:paddingStart="16dp" android:padding="4dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Dumbbell Flyes – 3×12"
+                android:paddingStart="16dp" android:padding="4dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Incline Dumbbell Press – 3×10"
+                android:paddingStart="16dp" android:padding="4dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Cable Crossover – 3×15"
+                android:paddingStart="16dp" android:padding="4dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Push-Up – 3×AMRAP"
+                android:paddingStart="16dp" android:padding="4dp"/>
+
+            <!-- Salı – Sırt -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Salı – Sırt"
+                android:textStyle="bold"
+                android:padding="8dp" android:layout_marginTop="12dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Deadlift – 4×6"
+                android:paddingStart="16dp" android:padding="4dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Pull-Up – 3×8"
+                android:paddingStart="16dp" android:padding="4dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Barbell Row – 3×10"
+                android:paddingStart="16dp" android:padding="4dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Face Pull – 3×15"
+                android:paddingStart="16dp" android:padding="4dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Hammer Curl – 3×12"
+                android:paddingStart="16dp" android:padding="4dp"/>
+
+            <!-- Çarşamba – Bacak -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Çarşamba – Bacak"
+                android:textStyle="bold"
+                android:padding="8dp" android:layout_marginTop="12dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Back Squat – 4×8"
+                android:paddingStart="16dp" android:padding="4dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Leg Press – 3×12"
+                android:paddingStart="16dp" android:padding="4dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Romanian Deadlift – 3×10"
+                android:paddingStart="16dp" android:padding="4dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Leg Extension – 3×12"
+                android:paddingStart="16dp" android:padding="4dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Calf Raise – 4×15"
+                android:paddingStart="16dp" android:padding="4dp"/>
+
+            <!-- Cuma – Omuz & Trap -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cuma – Omuz ve Trap"
+                android:textStyle="bold"
+                android:padding="8dp" android:layout_marginTop="12dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Overhead Press – 4×8"
+                android:paddingStart="16dp" android:padding="4dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Lateral Raise – 3×15"
+                android:paddingStart="16dp" android:padding="4dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Bent-Over Reverse Fly – 3×12"
+                android:paddingStart="16dp" android:padding="4dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Barbell Shrug – 4×10"
+                android:paddingStart="16dp" android:padding="4dp"/>
+
+            <!-- Cumartesi – Kol -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cumartesi – Kol"
+                android:textStyle="bold"
+                android:padding="8dp" android:layout_marginTop="12dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Barbell Curl – 3×10"
+                android:paddingStart="16dp" android:padding="4dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Triceps Pushdown – 3×12"
+                android:paddingStart="16dp" android:padding="4dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Preacher Curl – 3×10"
+                android:paddingStart="16dp" android:padding="4dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Overhead Triceps Ext. – 3×12"
+                android:paddingStart="16dp" android:padding="4dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
